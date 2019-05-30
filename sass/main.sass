@@ -379,6 +379,132 @@ section
 				background-color: lighten(#f7941d, 10)
 				outline: none
 
+.newsletter
+	padding: 50px 0 50px
+	h2
+		padding-left: 100px
+		color: #ebebeb
+		font-family: "Josefin Sans - Thin"
+		font-size: 80px
+		font-weight: 100
+		line-height: 68.4px
+	form
+		padding-left: 100px
+		input
+			height: 76px
+			border-top-left-radius: 38px
+			border-bottom-left-radius: 38px
+			background-color: #ebebeb
+			display: inline-block
+			width: 80%
+			padding: 30px
+			background-color: #fff
+			border: none
+			&:placeholder
+				color: #777575
+				font-family: "Josefin Sans - Thin"
+				font-size: 17px
+				font-weight: 400
+			&:active, &:focus
+				outline: none
+		button
+			display: inline-block
+			width: 15%
+			border-top-right-radius: 38px
+			border-bottom-right-radius: 38px
+			border: none
+			height: 76px
+			color: #ebebeb
+			font-family: "Josefin Sans - Thin"
+			font-size: 17px
+			font-weight: bold
+			text-transform: uppercase
+			background-color: #111111
+			position: relative
+			top: -2px
+			left: -5px
+			transition: background-color .25s ease
+			&:hover
+				background-color: lighten(#111111, 10%)
+				transition: background-color .25s ease
+			&:active, &:focus
+				background-color: lighten(#111111, 10%)
+				transition: background-color .25s ease
+				outline: none
 
+.footer
+	padding-top: 30px
+	.footer_top
+		.footer_top_items
+			color: #fdfdfd
+			font-size: 17px
+			font-weight: 400
+			line-height: 29px
+			white-space: nowrap
+			vertical-align: middle
+			display: inline-block
 
+			span
+				display: inline-block
+				padding: 10px 15px
+				border: 1px dashed #f7941d
+				vertical-align: middle
+				width: 60px
+				text-align: center
+				height: 54px
+
+	.footer_bottom_items
+		margin-top: 64px
+		h6
+			color: #ebebeb
+			font-size: 29px
+			font-weight: 700
+			margin-bottom: 34px
+		p
+			color: #ebebeb
+			font-size: 16px
+			font-weight: 400
+			line-height: 31.4px
+		ul
+			margin-left: 25px
+			li
+				a
+					color: #ebebeb
+					font-size: 16px
+					font-weight: 400
+					line-height: 31.4px
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						left: -25px
+						width: 12px
+						height: 12px
+						background-color: #f7941d
+						top: 50%
+						margin-top: -6px
+		&:last-child
+			max-width: 225px
+			img
+				width: 100px
+				margin: 5px
+
+.social-items
+	display: block
+
+	a
+		font-size: 45px
+		color: #fff
+		margin:  30px 20px
+		display: inline-block
+		transition: color .25s ease
+		&:hover
+			text-decoration: none
+			color: $accent
+			transition: color .25s ease
+.copyright
+	width: 100%
+	padding: 30px 0
+	color: #ffffff
+	
 @import "media" // Always at the end
